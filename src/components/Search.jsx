@@ -4,8 +4,7 @@ import SearchCart from "./SearchCart";
 
 const Search = () => {
   const location = useLocation();
-  const items = location.state.filterProduct;
-  console.log(items);
+  const items = location?.state?.filterProduct;
   return (
     <div className="container d-flex flex-wrap gap-4">
       {items.map((item) => {
